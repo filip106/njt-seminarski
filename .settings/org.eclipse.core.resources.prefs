@@ -1,0 +1,16 @@
+eclipse.preferences.version=1
+encoding//src/main/webapp/WEB-INF/views/login.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/views/pages/backend/backend-home.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/views/pages/frontend/all-courts.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/views/pages/frontend/blog-details.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/views/pages/frontend/court-details.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/views/pages/frontend/index.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/views/pages/frontend/user-profile/user-profile.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/views/pages/frontend/welcomepage/business-section.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/views/pages/frontend/welcomepage/featured-section.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/views/pages/frontend/welcomepage/home-section.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/views/pages/frontend/welcomepage/product-section.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/views/pages/frontend/welcomepage/test-section.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/views/tiles/backend/templates/default-backend-navigation.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/views/tiles/frontend/templates/defaultFooter.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/views/tiles/frontend/templates/defaultMenu.jsp=UTF-8

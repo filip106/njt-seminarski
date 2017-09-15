@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC  "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+
+	<!-- Base Definition -->
+	<definition name="base-definition"
+				template="/WEB-INF/views/tiles/frontend/layouts/defaultLayout.jsp">
+		<put-attribute name="title" value=""/>
+		<put-attribute name="head-scripts-styles"
+					   value="/WEB-INF/views/tiles/frontend/templates/head-scripts-styles.jsp"/>
+		<put-attribute name="header"
+					   value="/WEB-INF/views/tiles/frontend/templates/defaultHeader.jsp"/>
+		<put-attribute name="menu"
+					   value="/WEB-INF/views/tiles/frontend/templates/defaultMenu.jsp"/>
+		<put-attribute name="body" value=""/>
+		<put-attribute name="footer"
+					   value="/WEB-INF/views/tiles/frontend/templates/defaultFooter.jsp"/>
+	</definition>
+
+	<!-- Index Page -->
+	<definition name="index" extends="base-definition">
+		<put-attribute name="title" value="Welcome"/>
+		<put-attribute name="body">
+			<definition template="/WEB-INF/views/pages/frontend/index.jsp">
+				<put-attribute name="home-section"
+							   value="/WEB-INF/views/pages/frontend/welcomepage/home-section.jsp"/>
+				<put-attribute name="featured-section"
+							   value="/WEB-INF/views/pages/frontend/welcomepage/featured-section.jsp"/>
+				<put-attribute name="product-section"
+							   value="/WEB-INF/views/pages/frontend/welcomepage/product-section.jsp"/>
+				<put-attribute name="business-section"
+							   value="/WEB-INF/views/pages/frontend/welcomepage/business-section.jsp"/>
+				<put-attribute name="test-section"
+							   value="/WEB-INF/views/pages/frontend/welcomepage/test-section.jsp"/>
+			</definition>
+		</put-attribute>
+	</definition>
+
+	<!-- All courts page -->
+	<definition name="all-courts-frontend" extends="base-definition">
+		<put-attribute name="title" value="All courts" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/frontend/all-courts.jsp" />
+	</definition>
+
+	<!-- Court details page -->
+	<definition name="court-details-frontend" extends="base-definition">
+		<put-attribute name="title" value="Court details"/>
+		<put-attribute name="body">
+			<definition template="/WEB-INF/views/pages/frontend/court-details.jsp">
+				<put-attribute name="court-reservation-modal"
+							   value="/WEB-INF/views/pages/frontend/court-reservation-modal.jsp"/>
+			</definition>
+		</put-attribute>
+	</definition>
+
+
+	<!-- All blogs page -->
+	<definition name="all-blogs-frontend" extends="base-definition">
+		<put-attribute name="title" value="All blogs" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/frontend/all-blogs.jsp" />
+	</definition>
+
+	<!-- Blog details page -->
+	<definition name="blog-details-frontend" extends="base-definition">
+		<put-attribute name="title" value="Blog details" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/frontend/blog-details.jsp" />
+	</definition>
+	
+	<!-- User details page -->
+	<definition name="user-profile-frontend" extends="base-definition">
+		<put-attribute name="title" value="User profile" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/frontend/user-profile/user-profile.jsp" />
+	</definition>
+
+</tiles-definitions>

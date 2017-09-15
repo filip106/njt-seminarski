@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC  "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+
+    <!-- Base Definition For Backend Page -->
+    <definition name="backend-master"
+                template="/WEB-INF/views/tiles/backend/layouts/backend-layout.jsp">
+        <put-attribute name="navigation-menu">
+            <definition
+                    template="/WEB-INF/views/tiles/backend/templates/default-backend-navigation.jsp">
+                <put-attribute name="custom-notifications"
+                               value="/WEB-INF/views/tiles/backend/templates/default-notifications.jsp"/>
+            </definition>
+        </put-attribute>
+        <put-attribute name="body" value=""/>
+        <put-attribute name="footer-scripts"
+                       value="/WEB-INF/views/tiles/backend/templates/default-backend-scripts.jsp"/>
+    </definition>
+
+    <!-- Backend home -->
+    <definition name="backend-home" extends="backend-master">
+        <put-attribute name="body"
+                       value="/WEB-INF/views/pages/backend/backend-home.jsp"/>
+    </definition>
+    <definition name="backend-general-settings-page" extends="backend-master">
+        <put-attribute name="body"
+                       value="/WEB-INF/views/pages/backend/settings/backend-general-settings.jsp"/>
+    </definition>
+    <definition name="backend-start-page-layout" extends="backend-master">
+        <put-attribute name="body"
+                       value="/WEB-INF/views/pages/backend/settings/backend-start-page-layout.jsp"/>
+    </definition>
+
+    <!-- User page -->
+    <definition name="backend-user-page" extends="backend-master">
+        <put-attribute name="body"
+                       value="/WEB-INF/views/pages/backend/user/backend-all-users.jsp"/>
+    </definition>
+    <definition name="backend-user-page-add" extends="backend-master">
+        <put-attribute name="body"
+                       value="/WEB-INF/views/pages/backend/user/backend-user-add.jsp"/>
+    </definition>
+    <definition name="backend-user-page-edit" extends="backend-master">
+        <put-attribute name="body"
+                       value="/WEB-INF/views/pages/backend/user/backend-user-edit.jsp"/>
+    </definition>
+
+    <!-- Order page -->
+    <definition name="backend-order-page" extends="backend-master">
+        <put-attribute name="body"
+                       value="/WEB-INF/views/pages/backend/order/backend-all-orders.jsp"/>
+    </definition>
+    <definition name="backend-order-page-add" extends="backend-master">
+        <put-attribute name="body"
+                       value="/WEB-INF/views/pages/backend/order/backend-order-add.jsp"/>
+    </definition>
+
+    <!-- Partner page -->
+    <definition name="backend-partner-page" extends="backend-master">
+        <put-attribute name="body"
+                       value="/WEB-INF/views/pages/backend/partner/backend-all-partners.jsp"/>
+    </definition>
+    <definition name="backend-partner-page-add" extends="backend-master">
+        <put-attribute name="body"
+                       value="/WEB-INF/views/pages/backend/partner/backend-partner-add.jsp"/>
+    </definition>
+    <definition name="backend-partner-page-edit" extends="backend-master">
+        <put-attribute name="body"
+                       value="/WEB-INF/views/pages/backend/partner/backend-partner-edit.jsp"/>
+    </definition>
+    <definition name="backend-partner-manage-categories" extends="backend-master">
+        <put-attribute name="body"
+                       value="/WEB-INF/views/pages/backend/partner/backend-partner-manage-categories.jsp"/>
+    </definition>
+
+    <!-- Blog page -->
+    <definition name="backend-blog-page" extends="backend-master">
+        <put-attribute name="body"
+                       value="/WEB-INF/views/pages/backend/blog/backend-all-blogs.jsp"/>
+    </definition>
+    <definition name="backend-blog-page-add" extends="backend-master">
+        <put-attribute name="body"
+                       value="/WEB-INF/views/pages/backend/blog/backend-blog-add.jsp"/>
+    </definition>
+
+    <!-- Court page -->
+    <definition name="backend-court-page" extends="backend-master">
+        <put-attribute name="body"
+                       value="/WEB-INF/views/pages/backend/courts/backend-all-courts.jsp"/>
+    </definition>
+    <definition name="backend-court-page-add" extends="backend-master">
+        <put-attribute name="body"
+                       value="/WEB-INF/views/pages/backend/courts/backend-court-add.jsp"/>
+    </definition>
+    <definition name="backend-court-page-edit" extends="backend-master">
+        <put-attribute name="body"
+                       value="/WEB-INF/views/pages/backend/courts/backend-court-edit.jsp"/>
+    </definition>
+    <definition name="backend-court-manage-categories" extends="backend-master">
+        <put-attribute name="body"
+                       value="/WEB-INF/views/pages/backend/courts/backend-court-manage-categories.jsp"/>
+    </definition>
+
+</tiles-definitions>
